@@ -13,6 +13,15 @@
 		DD37D70F218AB19F00388582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD37D70E218AB19F00388582 /* Assets.xcassets */; };
 		DD37D712218AB19F00388582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD37D710218AB19F00388582 /* LaunchScreen.storyboard */; };
 		DD37D71D218AB19F00388582 /* MEStyleViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D71C218AB19F00388582 /* MEStyleViewTests.swift */; };
+		DD37D763218AB5F000388582 /* StyleCompose.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D762218AB5F000388582 /* StyleCompose.swift */; };
+		DD37D772218AEA3100388582 /* TitleLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D771218AEA3100388582 /* TitleLabelStyle.swift */; };
+		DD37D775218AECF200388582 /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D774218AECF200388582 /* UIView+Style.swift */; };
+		DD37D77B218AED0800388582 /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D776218AED0800388582 /* StyleManager.swift */; };
+		DD37D77C218AED0800388582 /* StyleMapRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D777218AED0800388582 /* StyleMapRegister.swift */; };
+		DD37D77D218AED0800388582 /* StyleRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D778218AED0800388582 /* StyleRegister.swift */; };
+		DD37D77E218AED0800388582 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D779218AED0800388582 /* Style.swift */; };
+		DD37D77F218AED0800388582 /* StyleMapRegisterObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D77A218AED0800388582 /* StyleMapRegisterObj.swift */; };
+		DD37D783218AF5C400388582 /* BodyTitleLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD37D782218AF5C400388582 /* BodyTitleLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		DD37D718218AB19F00388582 /* MEStyleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEStyleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD37D71C218AB19F00388582 /* MEStyleViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEStyleViewTests.swift; sourceTree = "<group>"; };
 		DD37D71E218AB19F00388582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD37D762218AB5F000388582 /* StyleCompose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCompose.swift; sourceTree = "<group>"; };
+		DD37D771218AEA3100388582 /* TitleLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelStyle.swift; sourceTree = "<group>"; };
+		DD37D774218AECF200388582 /* UIView+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
+		DD37D776218AED0800388582 /* StyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		DD37D777218AED0800388582 /* StyleMapRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleMapRegister.swift; sourceTree = "<group>"; };
+		DD37D778218AED0800388582 /* StyleRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleRegister.swift; sourceTree = "<group>"; };
+		DD37D779218AED0800388582 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		DD37D77A218AED0800388582 /* StyleMapRegisterObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleMapRegisterObj.swift; sourceTree = "<group>"; };
+		DD37D782218AF5C400388582 /* BodyTitleLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTitleLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,7 @@
 		DD37D706218AB19A00388582 /* MEStyleView */ = {
 			isa = PBXGroup;
 			children = (
+				DD37D761218AB48B00388582 /* Style */,
 				DD37D707218AB19A00388582 /* AppDelegate.swift */,
 				DD37D709218AB19A00388582 /* ViewController.swift */,
 				DD37D70B218AB19A00388582 /* Main.storyboard */,
@@ -94,6 +113,38 @@
 				DD37D71E218AB19F00388582 /* Info.plist */,
 			);
 			path = MEStyleViewTests;
+			sourceTree = "<group>";
+		};
+		DD37D761218AB48B00388582 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				DD37D774218AECF200388582 /* UIView+Style.swift */,
+				DD37D762218AB5F000388582 /* StyleCompose.swift */,
+				DD37D773218AEC8D00388582 /* StyleDesignAble */,
+				DD37D770218AEA1B00388582 /* StyleList */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		DD37D770218AEA1B00388582 /* StyleList */ = {
+			isa = PBXGroup;
+			children = (
+				DD37D771218AEA3100388582 /* TitleLabelStyle.swift */,
+				DD37D782218AF5C400388582 /* BodyTitleLabelStyle.swift */,
+			);
+			path = StyleList;
+			sourceTree = "<group>";
+		};
+		DD37D773218AEC8D00388582 /* StyleDesignAble */ = {
+			isa = PBXGroup;
+			children = (
+				DD37D779218AED0800388582 /* Style.swift */,
+				DD37D776218AED0800388582 /* StyleManager.swift */,
+				DD37D777218AED0800388582 /* StyleMapRegister.swift */,
+				DD37D77A218AED0800388582 /* StyleMapRegisterObj.swift */,
+				DD37D778218AED0800388582 /* StyleRegister.swift */,
+			);
+			path = StyleDesignAble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +248,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD37D772218AEA3100388582 /* TitleLabelStyle.swift in Sources */,
+				DD37D783218AF5C400388582 /* BodyTitleLabelStyle.swift in Sources */,
+				DD37D763218AB5F000388582 /* StyleCompose.swift in Sources */,
+				DD37D77C218AED0800388582 /* StyleMapRegister.swift in Sources */,
 				DD37D70A218AB19A00388582 /* ViewController.swift in Sources */,
+				DD37D77D218AED0800388582 /* StyleRegister.swift in Sources */,
 				DD37D708218AB19A00388582 /* AppDelegate.swift in Sources */,
+				DD37D775218AECF200388582 /* UIView+Style.swift in Sources */,
+				DD37D77F218AED0800388582 /* StyleMapRegisterObj.swift in Sources */,
+				DD37D77E218AED0800388582 /* Style.swift in Sources */,
+				DD37D77B218AED0800388582 /* StyleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MEStyleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.viethq.MEStyleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -379,6 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MEStyleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.viethq.MEStyleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
